@@ -1,0 +1,14 @@
+api:
+    build: ../../api
+    ports:
+        - "8000:8000"
+    volumes:
+        - ../../api:/var/www/app
+    tty: true
+    command: /var/www/app/start.sh
+
+db:
+  build: ../../db
+  volumes:
+    - dbdata:/var/lib/postgresql/data
+

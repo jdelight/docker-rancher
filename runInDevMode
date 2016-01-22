@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# create the dbdata volume
+docker volume create --name=dbdata
+
+# start the applications on the backend network
+cd ./eco/backend/ && docker-compose --x-networking up

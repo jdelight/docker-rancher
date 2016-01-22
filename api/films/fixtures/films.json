@@ -1,0 +1,44 @@
+[
+  {
+    "model": "films.film",
+    "pk": 1,
+    "fields": {
+      "title": "Steve Jobs"
+    }
+  },
+  {
+    "model": "films.film",
+    "pk": 2,
+    "fields": {
+      "title": "Inside Out"
+    }
+  },
+  {
+    "model": "films.film",
+    "pk": 3,
+    "fields": {
+      "title": "The Revenant"
+    }
+  },
+  {
+    "model": "films.film",
+    "pk": 4,
+    "fields": {
+      "title": "Spectre"
+    }
+  },
+  {
+    "model": "films.film",
+    "pk": 5,
+    "fields": {
+      "title": "The Martian"
+    }
+  },
+  {
+    "model": "films.film",
+    "pk": 6,
+    "fields": {
+      "title": "Jurassic World"
+    }
+  }
+]
