@@ -4,9 +4,9 @@ source ~/.bashrc
 
 # Wait for the db service to be ready before continuing
 echo "waiting for db..."
-while ! nc -w 1 -z backend_db_1 5432 2>/dev/null;
+while ! nc -w 1 -z $DB_HOST $DB_PORT 2>/dev/null;
 do
-  echo -n .
+  echo .
   sleep 1
 done
 

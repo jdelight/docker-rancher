@@ -3,42 +3,48 @@
     "model": "films.film",
     "pk": 1,
     "fields": {
-      "title": "Steve Jobs"
+      "title": "Steve Jobs",
+      "director": "Danny Boyle"
     }
   },
   {
     "model": "films.film",
     "pk": 2,
     "fields": {
-      "title": "Inside Out"
+      "title": "Inside Out",
+      "director": "Pete Docter"
     }
   },
   {
     "model": "films.film",
     "pk": 3,
     "fields": {
-      "title": "The Revenant"
+      "title": "The Revenant",
+      "director": "Alejandro González Iñárritu"
     }
   },
   {
     "model": "films.film",
     "pk": 4,
     "fields": {
-      "title": "Spectre"
+      "title": "Spectre",
+      "director": "Sam Mendes"
     }
   },
   {
     "model": "films.film",
     "pk": 5,
     "fields": {
-      "title": "The Martian"
+      "title": "The Martian",
+      "director": "Ridley Scott"
     }
   },
   {
     "model": "films.film",
     "pk": 6,
     "fields": {
-      "title": "Jurassic World"
+      "title": "Jurassic World",
+      "director": "Colin Trevorrow"
     }
   }
 ]

@@ -1,0 +1,24 @@
+- name: create eco/backend
+  file:
+    path: ./eco/backend
+    state: directory
+
+- name: build rancher-compose.yml backend stack
+  template:
+    src: backend/rancher-compose.j2
+    dest: ./eco/backend/rancher-compose.yml
+
+- name: build docker-compose.yml backend stack
+  template:
+    src: backend/docker-compose.j2
+    dest: ./eco/backend/docker-compose.yml
+
+- name: build rancher.env file
+  template:
+    src: backend/rancher.env.j2
+    dest: ./eco/backend/rancher.env
+
+- name: build .env file
+  template:
+    src: backend/.env.j2
+    dest: ./eco/backend/.env

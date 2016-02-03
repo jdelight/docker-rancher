@@ -17,5 +17,6 @@ from django.conf.urls import url
 from films import views
 
 film_urls = [
-    url(r'^films/', views.FilmList.as_view()),
+    url(r'^films/$', views.FilmList.as_view()),
+    url(r'^films/(?P<pk>[0-9]+)/', views.FilmDetail.as_view(), name='film-detail'),
 ]

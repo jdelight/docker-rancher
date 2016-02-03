@@ -1,0 +1,32 @@
+version: "2"
+
+services:
+  api:
+    container_name: api
+    image: jdelight/films_api
+    build: ./api
+    networks:
+      - backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/var/www/app
+    env_file: .env
+    tty: true
+    command: /var/www/app/start.sh
+
+  db:
+    container_name: db
+    image: jdelight/films_db
+    build: ./db
+    networks:
+      - backend
+    env_file: .env
+    volumes:
+      - "dbdata:/var/lib/postgresql/data"
+
+volumes:
+  dbdata:
+
+networks:
+  backend:

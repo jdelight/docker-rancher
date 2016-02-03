@@ -1,0 +1,6 @@
+---
+- name: build rancher-compose
+  hosts: development
+  gather_facts: no
+  roles:
+    - rancher

@@ -1,0 +1,9 @@
+- name: build docker-compose.yml
+  template:
+    src: docker-compose.j2
+    dest: ./docker-compose.yml
+
+- name: build .env file
+  template:
+    src: .env.j2
+    dest: ./.env

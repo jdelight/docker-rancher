@@ -1,0 +1,6 @@
+---
+- name: build docker-compose
+  hosts: development
+  gather_facts: no
+  roles:
+    - docker
